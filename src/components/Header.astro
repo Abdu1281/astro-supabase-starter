@@ -1,9 +1,33 @@
-<header class="max-w-4xl mx-auto mt-6 mb-16">
-  <nav class="flex justify-between">
-    <a
-      href="/"
-      class="text-2xl font-bold hover:underline hover:underline-offset-4 hover:decoration-green-500"
-      ><span class="text-green-500">&#10022;</span> Astro Supabase Starter
+---
+import BurgerMenu from "./BurgerMenu.astro";
+---
+
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+</html>
+
+<header class="header">
+  <div class="logo">
+    <a href="/">
+      <img src="/public/img/planet_logo_purple.webp" alt="Logo" />
     </a>
-  </nav>
+  </div>
+  <BurgerMenu />
 </header>
+
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+</style>
